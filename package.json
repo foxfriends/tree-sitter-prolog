@@ -2,9 +2,10 @@
   "name": "tree-sitter-prolog",
   "version": "1.0.0",
   "description": "Tree-sitter language definition for Prolog",
-  "main": "index.js",
+  "main": "bindings/node",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "tree-sitter generate",
+    "test": "tree-sitter test"
   },
   "author": "James N. V. Cash <james.cash@occasionallycogent.com>",
   "license": "BSD",
@@ -12,6 +13,6 @@
     "nan": "^2.14.0"
   },
   "devDependencies": {
-    "tree-sitter-cli": "^0.16.5"
+    "tree-sitter-cli": "^0.20.0"
   }
 }
